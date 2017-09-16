@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Shopify Product Creation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Create Product</h2>
+    <form action="formsubmit.php" method="post"  enctype="multipart/form-data">
+
+        <label for="prod_sku">Product SKU</label>
+        <input type="text" id="prod_sku" name="prod_sku" placeholder="Product SKU.." required>
+
+        <label for="prod_name">Product Name</label>
+        <input type="text" id="prod_name" name="prod_name" placeholder="Product Name..">
+
+        <label for="prod_desc">Product Description</label>
+        <textarea id="prod_desc" name="prod_desc" placeholder="Product Description.." style="height:200px"></textarea>
+
+        <label for="prod_price">Product Price</label>
+        <input type="number" step="1" id="prod_price" name="prod_price" placeholder="Product Price.." required>
+
+
+            <input type="file" name="file" id="file">
+
+            <!-- Drag and Drop container-->
+            <div class="upload-area"  id="uploadfile">
+                <h1>Drag and Drop file here<br/>Or<br/>Click to select file</h1>
+            </div>
+        <input type="hidden" name="fileUploadPath" id="fileUploadPath" value="">
+
+        <input type="submit" value="Create">
+
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
