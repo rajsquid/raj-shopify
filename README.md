@@ -1,1 +1,1 @@
-# raj-shopify
+# Shopify custom code
